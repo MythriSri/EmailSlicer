@@ -1,6 +1,9 @@
-email = input("Enter Your Email: ").strip()
+# Step 1: Get email input from the user
+email = input("Enter your email address: ")
 
-username = email[:email.index('@')]
-domain = email[email.index('@') + 1:]
+# Step 2: Split the email at the '@' symbol
+username, domain = email.split('@')
 
-print(f"Your username is {username} & domain is {domain}")
+# Step 3: Display the results
+print("Username:", username)
+print("Domain:", domain)
